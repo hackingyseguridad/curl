@@ -7,4 +7,4 @@ curl --insecure --silent --compressed \
 -H "Accept-Encoding: gzip, deflate, br" \
 -H "Connection: keep-alive" \
 -H "Upgrade-Insecure-Requests: 1" \
--H "Authorization: Basic $( (echo -ne 'admin:Matarrosa1'; ) | base64 -w 0 )" http://192.168.1.254/index.html?
+-H "Authorization: Basic $( (echo -ne 'admin:12345'; ) | base64 -w 0 )" http://192.168.1.254/index.html?
