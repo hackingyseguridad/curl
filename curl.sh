@@ -1,5 +1,5 @@
 #!/bin/bash
-curl --insecure --silent \
+curl --insecure --silent --compressed \
 -H "Accept: */*" \
 -H "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36" \
 -H "Accept: text/html, applicattion/xhtml+xml, application/xml;q=0.9,*/*;q=0.8" \
@@ -7,4 +7,4 @@ curl --insecure --silent \
 -H "Accept-Encoding: gzip, deflate, br" \
 -H "Connection: keep-alive" \
 -H "Upgrade-Insecure-Requests: 1" \
-"http://192.168.1.254/index.html?"
+-H "Authorization: Basic $( (echo -ne 'admin:Matarrosa1'; ) | base64 -w 0 )" http://192.168.1.254/index.html?
