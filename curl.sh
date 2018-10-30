@@ -1,6 +1,8 @@
 #!/bin/bash
 #
-# Ejemplo de peticion web completa y bien formada con Curl
+# Ejemplo de peticion web completa y bien formada con el comendo Curl
+# Petición http://192.168.1.254/index.html?
+# Credenciales user=admin passwd=12345 codificadas en Base64
 # www.hackingyseguridad.com
 #
 curl --insecure --silent --compressed \
