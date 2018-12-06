@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ejemplo de peticion web completa y bien formada con el comando curl
-# Peticion por ejemplo a la url http://192.168.1.1
+# Peticion con auth basic por ejemplo a la url http://192.168.1.1
 # www.hackingyseguridad.com
 
 curl --insecure --silent --compressed \
