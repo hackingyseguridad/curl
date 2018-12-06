@@ -10,4 +10,4 @@ curl --insecure --silent --compressed \
 -H "Accept-Encoding: gzip, deflate, br" \
 -H "Connection: keep-alive" \
 -H "Upgrade-Insecure-Requests: 1" \
-"http://192.168.1.1"
+"http://usuario:password@192.168.1.254"
