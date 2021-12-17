@@ -1,6 +1,6 @@
 # #curl
 
-#Peticiones WEB elaboradas con curl simulando un navegador 
+#Ejemplos de uso del comenado curl. con distinta peticiones WEB elaboradas
 
 https://linux.die.net/man/1/curl
 
