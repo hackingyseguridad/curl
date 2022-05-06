@@ -1,4 +1,4 @@
-#Bypass 401
+#Bypass 401 - hackingyseguridad.com
 #!/bin/bash
 echo "Uso.: ./bypass401.sh https://url"
 curl -k -I -s -v $1 \
