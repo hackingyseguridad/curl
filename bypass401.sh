@@ -6,7 +6,7 @@ curl -k -s -vvv $1 -X "TRACE" \
 -H "X-Originating-IP: 127.0.0.1" \
 -H "X-Forwarded-For: 127.0.0.1" \
 -H "X-Forwarded-Host: 127.0.0.1" \
--H "X-Forwared-Host: 127.0.0.1 True-Client-IP: 127.0.0.1 " \
+-H "X-Forwared-Host: 127.0.0.1" \
 -H "X-Real-IP: 127.0.0.1" \
 -H "X-Remote-IP: 127.0.0.1" \
 -H "X-Remote-Addr: 127.0.0.1" \
